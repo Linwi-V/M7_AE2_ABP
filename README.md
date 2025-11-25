@@ -88,11 +88,11 @@ python manage.py migrate
 
 ##Operaciones CRUD (Django Shell)
 
-Abrir Shell:
+##Abrir Shell:
 
 python manage.py shell
 
-Crear:
+##Crear:
 
 from productos.models import Producto
 
@@ -104,17 +104,17 @@ p = Producto(
 )
 p.save()
 
-Leer:
+##Leer:
 
 producto = Producto.objects.get(nombre="Laptop Gamer")
 print(producto.nombre, producto.precio, producto.stock, producto.fecha_creacion)
 
-Actualizar:
+##Actualizar:
 
 producto.precio = 1700.00
 producto.save()
 
-Eliminar:
+##Eliminar:
 
 producto.delete()
 
@@ -130,16 +130,13 @@ A continuación se incluyen las capturas exigidas en la actividad, demostrando:
 * Ejecución completa de operaciones CRUD en el Django Shell
 
 ### 1. Migraciones aplicadas
-
-![1764107318101](image/README/1764107318101.png)
+<img width="1920" height="1080" alt="Captura de pantalla 2025-11-25 182621" src="https://github.com/user-attachments/assets/c3196845-f0dc-467e-ab51-6d85f0d5eb73" />
 
 ### 2. Conexión a MySQL y estructura de tablas
-
-![1764107333669](image/README/1764107333669.png)
+<img width="1920" height="1080" alt="Captura de pantalla 2025-11-25 182643" src="https://github.com/user-attachments/assets/65add5ea-4488-4e63-93d3-6daa3e1f201b" />
 
 ### 3. CRUD ejecutado en Django Shell
-
-![1764107350284](image/README/1764107350284.png)
+<img width="1920" height="1080" alt="Captura de pantalla 2025-11-25 182654" src="https://github.com/user-attachments/assets/fb2c603a-949d-446b-b3b2-2d4fb3c0907c" />
 
 ## Estructura del Proyecto
 
